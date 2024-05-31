@@ -2,7 +2,7 @@ import os
 from send2trash import send2trash
 
 # Specify the path to your Downloads folder
-downloads_folder = os.path.expanduser("~\\Downloads")
+downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads")
 
 # List all files in the Downloads folder
 files = os.listdir(downloads_folder)
